@@ -45,7 +45,9 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: '/energomerApp',
+});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
