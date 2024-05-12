@@ -1,0 +1,39 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-block {
+  max-width: 930rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 845rem;
+}
+
+.right-block {
+  max-width: 764rem;
+  width: 100%;
+  min-height: 845rem;
+}
+
+.title {
+  @include TitleH2;
+  max-width: 764rem;
+}
+
+.description {
+  max-width: 764rem;
+  margin-top: 20rem;
+
+  p {
+    margin-top: 20rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.slider {
+  margin-top: auto;
+}

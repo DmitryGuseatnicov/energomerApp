@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  max-width: 764rem;
+}
+
+.title {
+  max-width: 764rem;
+  @include TitleH2;
+}
+
+.description {
+  margin-top: 47rem;
+  color: var(--MainBlack);
+}
+
+.info-cards {
+  max-width: 655rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}

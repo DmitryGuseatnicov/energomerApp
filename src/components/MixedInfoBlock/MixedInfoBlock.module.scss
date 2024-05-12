@@ -1,0 +1,10 @@
+.bottom-content {
+  margin-top: 40rem;
+  display: flex;
+  gap: 40rem;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc(50% - 20rem);
+}

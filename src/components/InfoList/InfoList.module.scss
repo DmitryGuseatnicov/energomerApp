@@ -1,0 +1,26 @@
+.info-list {
+  list-style: none;
+}
+
+.title-list {
+  @include TitleH3;
+  padding-bottom: 20rem;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  gap: 100rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #CFCCCA;
+
+  @include BodyText14;
+
+  &.withChildren {
+    gap: 25rem;
+  }
+}

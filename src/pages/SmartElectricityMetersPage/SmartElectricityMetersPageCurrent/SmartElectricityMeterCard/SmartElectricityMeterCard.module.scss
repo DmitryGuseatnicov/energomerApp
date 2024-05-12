@@ -1,0 +1,24 @@
+.name {
+  @include Subtitle;
+  color: var(--MainDarkGrey);
+}
+
+.title {
+  @include TitleH2;
+  margin-top: 10rem;
+}
+
+.sub-title {
+  @include TitleH2;
+  color: var(--MainBlue);
+  margin-top: 10rem;
+}
+
+.tabs {
+  margin-top: 40rem;
+}
+
+.component-wrapper {
+  margin-top: 40rem;
+  overflow: scroll;
+}

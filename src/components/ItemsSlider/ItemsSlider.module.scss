@@ -1,0 +1,61 @@
+.items-slider {
+  position: relative;
+}
+
+.slide {
+  padding: 10rem 20rem;
+  background: var(--MainWhite);
+  border-radius: 20rem;
+  min-height: 286rem;
+  width: 211rem;
+}
+
+.image {
+  display: flex;
+  margin: 0 auto;
+  width: 132rem;
+  height: 132rem;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 6rem;
+  @include BodyText14;
+}
+
+.sub-title {
+  margin-top: 10rem;
+  color: var(--MainDarkGrey);
+  @include BodyText12;
+}
+
+.prev, .next {
+  width: 56rem;
+  height: 56rem;
+  background: linear-gradient(180deg, #007DB5 0%, #00A1D5 100%);
+  box-shadow: 0px 5px 15px -10px #007DB580, 0px -5px 12px 0px #92E6FB80 inset, 0px -1px 2px 0px #FFFFFF66 inset;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  border: none;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.prev {
+  left: -30rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.next {
+  right: -10rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  z-index: 10;
+}

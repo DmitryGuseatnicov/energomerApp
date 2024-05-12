@@ -1,0 +1,70 @@
+@mixin TitleH1 {
+  font-family: var(--font-family);
+  font-size: 80rem;
+  font-weight: 600;
+  line-height: 80rem;
+  letter-spacing: -0.02em;
+}
+
+@mixin TitleH2 {
+  font-family: var(--font-family);
+  font-size: 40rem;
+  font-weight: 600;
+  line-height: 48.76rem;
+  letter-spacing: -0.02em;
+}
+
+
+@mixin TitleH3 {
+  font-family: var(--font-family);
+  font-size: 24rem;
+  font-weight: 600;
+  line-height: 29.26rem;
+  letter-spacing: -0.02em;
+}
+
+@mixin Subtitle {
+  font-family: var(--font-family);
+  font-size: 20rem;
+  font-weight: 600;
+  line-height: 28rem;
+  letter-spacing: -0.02em;
+}
+
+@mixin BodyText {
+  font-family: var(--font-family);
+  font-size: 14rem;
+  font-weight: 600;
+  line-height: 20rem;
+  letter-spacing: -0.01em;
+}
+
+@mixin BodyText14 {
+  font-family: var(--font-family);
+  font-size: 14rem;
+  font-weight: 600;
+  line-height: 22rem;
+  letter-spacing: -0.01em;
+}
+
+@mixin BodyText12 {
+  font-family: var(--font-family);
+  font-size: 12rem;
+  font-weight: 600;
+  line-height: 20rem;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+@mixin TabText {
+  font-family: var(--font-family);
+  font-size: 12rem;
+  font-weight: 600;
+  line-height: 16rem;
+  letter-spacing: -0.02em;
+}
+
+@mixin reset-button-style {
+  background: transparent;
+  border: none;
+}

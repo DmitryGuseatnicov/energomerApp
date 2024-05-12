@@ -1,0 +1,1 @@
+export { AmiSystemPageIndex } from './AmiSystemPageIndex';

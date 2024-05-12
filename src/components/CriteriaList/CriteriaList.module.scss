@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem;
+  border-bottom: 1px solid #CFCCCA;
+
+  &:first-child {
+    border-top: 1px solid #CFCCCA;
+  }
+}
+
+.title {
+  @include TitleH3;
+  padding-bottom: 20rem;
+}
+
+.key {
+  min-width: 360rem;
+  color: var(--MainDarkGrey);
+
+  @include BodyText12;
+}
+
+.value {
+  width: 100%;
+  @include BodyText12;
+}

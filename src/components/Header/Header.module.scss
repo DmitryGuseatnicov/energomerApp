@@ -1,0 +1,53 @@
+.header {
+  padding: 37.5rem 40rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 57.29%, rgba(235, 250, 255, 0.5) 81.92%, rgba(255, 255, 255, 0.5) 100%);
+  border: 1rem solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 82.96%, rgba(255, 255, 255, 0.2) 100%);
+  border-radius: 40rem;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 258rem;
+  height: 25rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40rem;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-size: 15rem;
+  font-weight: 600;
+  line-height: 20rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 3rem;
+    bottom: -40rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--MainBlue);
+    transition: 0.2s;
+  }
+
+  &.isActive {
+    &::before {
+      width: 50rem;
+    }
+  }
+}

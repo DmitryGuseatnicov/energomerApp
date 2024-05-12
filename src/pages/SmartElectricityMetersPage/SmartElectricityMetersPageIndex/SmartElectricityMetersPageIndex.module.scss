@@ -1,0 +1,21 @@
+.title {
+  @include TitleH1;
+}
+
+.content {
+  margin-top: 60rem;
+  display: flex;
+  gap: 163rem;
+}
+
+.block-title {
+  @include TitleH3;
+}
+
+.list {
+  margin-top: 47rem;
+}
+
+.card {
+  margin-top: 10rem;
+}

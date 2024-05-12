@@ -1,0 +1,49 @@
+.tabs-panel {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  background: #E9EAEA;
+  border-radius: 60rem;
+}
+
+.tab {
+  @include reset-button-style;
+  @include TabText;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--MainDarkGrey);
+  padding: 16rem 24rem;
+  transition: 0.3s;
+  border-radius: 60rem;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 0;
+    width: 0;
+    border-radius: 60rem;
+    background: linear-gradient(180deg, #007DB5 0%, #00A1D5 100%);
+    box-shadow: 0rem 5rem 15rem -10rem #007DB580, 0rem -5rem 12rem 0rem #92E6FB80 inset, 0rem -1rem 2rem 0rem #FFFFFF66 inset;
+    transition: 0.2s;
+  }
+
+  &.isActive {
+    color: var(--MainWhite);
+
+    &::before {
+      opacity: 1;
+      z-index: -1;
+      width: 100%;
+      left: 0;
+    }
+  }
+}

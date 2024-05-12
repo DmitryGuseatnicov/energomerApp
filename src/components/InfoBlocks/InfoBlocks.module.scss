@@ -1,0 +1,16 @@
+.block {
+  margin-top: 40rem;
+
+  &:first-child {
+    margin-top: 0rem;
+  }
+}
+
+.title {
+  @include TitleH3;
+}
+
+.description {
+  @include BodyText14;
+  margin-top: 20rem;
+}

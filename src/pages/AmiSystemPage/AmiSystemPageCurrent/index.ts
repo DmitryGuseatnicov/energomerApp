@@ -1,0 +1,1 @@
+export { AmiSystemPageCurrent } from './AmiSystemPageCurrent';
