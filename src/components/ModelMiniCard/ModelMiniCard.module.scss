@@ -1,27 +1,45 @@
 .model-mini-card {
+  display: block;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  padding: 10rem 10rem 20rem 10rem;
+  background: #FFFFFF80;
+  border: 1rem solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 82.96%, rgba(255, 255, 255, 0.2) 100%);
+  box-shadow: 0rem 4rem 24rem 8rem #FFFFFF1A inset, 16rem 24rem 16rem -16rem #FFFFFF1A inset,  0rem 10rem 25rem -15rem #0052A04D;
+  border-radius: 20rem;
+  width: 220rem;
+  height: 100%;
 }
 
 .image {
-  width: 103rem;
-  height: 95rem;
-  border-radius: 10rem;
+  min-width: 200rem;
+  max-width: 200rem;
+  min-height: 95rem;
+  max-height: 95rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: var(--MainGrey);
+  align-items: center;
+  border-radius: 10rem;
+  background: var(--MainWhite);
+  
 
   img {
     width: 100%;
-    height: 100%;
+    height: 75rem;
     object-fit: contain;
+    border-radius: 10rem;
   }
 }
 
+
 .name {
-  @include Subtitle;
-  color: var(--MainDarkGrey);
+  display: flex;
+  align-items: center;
+  margin-top: 20rem;
+  justify-content: space-between;
+
+  span {
+    @include Subtitle;
+    color: var(--MainDarkGrey);
+  }
 }

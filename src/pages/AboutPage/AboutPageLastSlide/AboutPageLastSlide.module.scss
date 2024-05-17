@@ -1,0 +1,87 @@
+.slide {
+  margin: 0 111rem;
+  position: relative;
+}
+
+.title {
+  @include TitleH2;
+  max-width: 538rem;
+}
+
+.image-1 {
+  position: absolute;
+  width: 438.3rem;
+  height: 293rem;
+  top: 310rem;
+  left: -40rem;
+}
+
+.image-2 {
+  position: absolute;
+  top: 240rem;
+  left: 180rem;
+}
+
+.image-3 {
+  position: absolute;
+  top: 550rem;
+  left: 180rem;
+}
+
+.image-4 {
+  position: absolute;
+  top: 20rem;
+  left: 540rem;
+  width: 121rem;
+  height: 65.18rem;
+}
+
+.image-5 {
+  position: absolute;
+  top: 120rem;
+  left: 620rem;
+  width: 380rem;
+  height: 336rem;
+  z-index: 6;
+}
+
+.image-6 {
+  position: absolute;
+  top: 80rem;
+  left: 790rem;
+  width: 317rem;
+  height: 242rem;
+  z-index: 2;
+}
+
+.image-7 {
+  position: absolute;
+  top: 40rem;
+  left: 950rem;
+  width: 546rem;
+  height: 365rem;
+}
+
+.image-8 {
+  position: absolute;
+  top: 410rem;
+  left: 750rem;
+  width: 337rem;
+  height: 251rem;  
+}
+
+.image-9 {
+  position: absolute;
+  top: 470rem;
+  left: 1130rem;
+  width: 159rem;
+  height: 191rem;
+}
+
+.image-10 {
+  position: absolute;
+  top: 330rem;
+  left: 1270rem;
+  width: 232rem;
+  height: 285rem;
+}

@@ -1,0 +1,72 @@
+.slide {
+  margin: 0 111rem;
+  position: relative;
+}
+
+.title {
+  @include TitleH2;
+  color: var(--MainBlue);
+  margin-bottom: 20rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15rem 0;
+  gap: 4rem;
+  border-top: 1rem solid #90A3A9;
+  max-width: 481rem;
+
+  span {
+    display: block;
+    @include Subtitle;
+  }
+}
+
+.image-1 {
+  position: absolute;
+  width: 565rem;
+  height: 330rem;
+  top: 300rem;
+  left: -30rem;
+  z-index: 9;
+}
+
+.image-2 {
+  position: absolute;
+  top: 240rem;
+  height: 171rem;
+  left: 430rem;
+}
+
+.image-3 {
+  position: absolute;
+  top: 190rem;
+  right: 460rem;
+  width: 383rem;
+  z-index: 2;
+}
+
+.image-4 {
+  position: absolute;
+  top: 0rem;
+  width: 201rem;
+  right: 0rem;
+  top: 70rem;
+  right: 320rem;
+  z-index: 3;
+}
+
+.image-5 {
+  position: absolute;
+  top: 80rem;
+  right: -80rem;
+  width: 989rem;
+}
+
+.image-6 {
+  position: absolute;
+  top: 420rem;
+  right: 0rem;
+  width: 228rem;
+}

@@ -1,0 +1,1 @@
+export { AboutPageSecondSlide } from './AboutPageSecondSlide';

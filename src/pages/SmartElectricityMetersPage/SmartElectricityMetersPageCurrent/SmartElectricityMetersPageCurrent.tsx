@@ -17,7 +17,7 @@ const cx = cnBind.bind(styles);
 
 const PAGES_STATE = {
   'CE308-S31': {
-    modelPath: `${window.location.origin}/models/some.fbx`,
+    modelPath: `${window.location.origin}/energomerApp/models/some.fbx`,
     title: 'CE308 DLMS',
     subTitle: 'Three-phase multi-tariff active and reactive energy meter',
     scale: 4,
@@ -149,10 +149,10 @@ const PAGES_STATE = {
   },
 
   'СЕ207-R7': {
-    modelPath: `${window.location.origin}/models/some.fbx`,
+    modelPath: `${window.location.origin}/energomerApp/models/СЕ207R7.fbx`,
     title: 'СЕ207 R7',
     subTitle: 'Single-phase multi-tariff electricity meters',
-    scale: 4,
+    scale: 0.3,
     chips: [
       { text: 'Optical Port', background: '#45798B' },
       { text: 'GMS/GPRS', background: '#709F3E' },
@@ -245,10 +245,10 @@ const PAGES_STATE = {
   },
 
   'CE208-S7': {
-    modelPath: `${window.location.origin}/models/some.fbx`,
-    title: 'СЕ207 R7',
-    subTitle: 'Single-phase multi-tariff electricity meters',
-    scale: 4,
+    modelPath: `${window.location.origin}/energomerApp/models/S7СЕ208.fbx`,
+    title: 'СЕ207 S7',
+    subTitle: 'Single-phase multi-tariff active and reactive energy meter',
+    scale: 0.7,
     chips: [
       { text: 'Optical Port', background: '#45798B' },
       { text: 'RS485', background: '#709F3E' },
@@ -372,7 +372,7 @@ const PAGES_STATE = {
   },
 
   'CE208-C4+901': {
-    modelPath: `${window.location.origin}/models/some.fbx`,
+    modelPath: `${window.location.origin}/energomerApp/models/some.fbx`,
     title: 'CE208 Split',
     subTitle: 'Single-phase multi-tariff active and reactive energy meter',
     scale: 4,
@@ -526,7 +526,7 @@ const PAGES_STATE = {
   },
 
   'СЕ209+901': {
-    modelPath: `${window.location.origin}/models/some.fbx`,
+    modelPath: `${window.location.origin}/energomerApp/models/some.fbx`,
     title: 'CE209-C3',
     subTitle: 'Single-phase multi-tariff active and reactive prepayment energy meter',
     scale: 4,
@@ -696,8 +696,37 @@ const PAGES_STATE = {
     ],
   },
 
+  CE602M: {
+    modelPath: `${window.location.origin}/energomerApp/models/some.fbx`,
+    title: 'CE602м',
+    subTitle: 'Portable multifunction calibrator',
+    scale: 4,
+    chips: [
+      { text: 'Optical Port', background: '#45798B' },
+      { text: 'BLE', background: '#709F3E' },
+      { text: 'NB-loT', background: '##74B1DC' },
+      { text: 'LoRa', background: '#C8752A' },
+      { text: 'ZigBee', background: '#F0C242' },
+      { text: 'GMS/GPRS', background: '#709F3E' },
+      { text: 'G3-PLC', background: '#C8752A' },
+      { text: 'G3-PLC + RF868', background: 'linear-gradient(90deg, #709F3E 0%, #74B1DC 100%);' },
+    ],
+    infoCards: [
+      {
+        tabName: 'Description',
+        Component: InfoBlocks,
+        maxHeight: '450rem',
+        componentProps: {
+          blocks: [
+            { title: 'Description', description: 'The СЕ602М portable multifunction calibrator is designed to measure electric quantities when calculating the errors of electric power and energy metering devices during their verification and (or) measurement of their metrological characteristics under laboratory, factory conditions and at the places of their operation with a test signal source or actual load.' },
+          ],
+        },
+      },
+    ],
+  },
+
   // 'СЕ309+901': {
-  //   modelPath: `${window.location.origin}/models/some.fbx`,
+  //   modelPath: `${window.location.origin}/energomerApp/models/some.fbx`,
   //   title: 'CE209-C3',
   //   subTitle: 'Single-phase multi-tariff active and reactive prepayment energy meter',
   //   scale: 4,

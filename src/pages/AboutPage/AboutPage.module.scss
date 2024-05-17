@@ -1,0 +1,63 @@
+.about-page {
+  position: relative;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 32rem;
+  border-bottom: 1rem solid #90A3A9;
+}
+
+.title {
+  @include TitleH1
+}
+
+.sub-title {
+  @include TitleH3;
+  color: #90A3A9;
+  max-width: 483rem;
+  text-align: right;
+}
+
+.slides {
+  margin-top: 40rem;
+  position: relative;
+  height: 600rem;
+}
+
+.button {
+  border: none;
+  width: 104rem;
+  height: 100rem;
+  padding: 40rem;
+  border-radius: 40rem;
+  background: linear-gradient(180deg, #FFFFFF 57.29%, #EBFAFF 81.92%, #FFFFFF 100%);
+  border: 1rem solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 82.96%, rgba(255, 255, 255, 0.2) 100%);
+  box-shadow: 0rem 4rem 24rem 8rem #FFFFFF1A inset,  16rem 24rem 16rem -16rem #FFFFFF1A inset, 0rem 10rem 25rem -15rem #0052A04D;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    @include svg-color(#335CFF)
+  }
+
+  &.button-left {
+    transform: translateY(-50%);
+    left: -40rem;
+  }
+
+  &.button-right {
+    transform: translateY(-50%);
+    right: -40rem;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.slide {
+  margin: 0 111rem;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  gap: 119rem;
+}
+
+.text-block-1 {
+  width: 544rem;
+
+  p {
+    margin-bottom: 20rem;
+  }
+}
+
+.text-block-2 {
+  width: 505rem;
+  p {
+    margin-bottom: 20rem;
+  }
+}
+
+.image-1 {
+  position: absolute;
+  top: 20rem;
+  right: 160rem;
+  z-index: 2;
+  width: 124rem;
+  height: 107rem;
+  object-fit: cover;
+}
+
+.image-2 {
+  position: absolute;
+  top: 30rem;
+  right: 0rem;
+  z-index: 1;
+  width: 213rem;
+  height: 270rem;
+}
+
+.image-3 {
+  position: absolute;
+  top: 0;
+  right: -120rem;
+  z-index: 3;
+  width: 197rem;
+  height: 182rem;
+}
+
+.image-4 {
+  position: absolute;
+  bottom: -300rem;
+  left: -60rem;
+  width: 432rem;
+  height: 224rem;
+}
+
+.image-5 {
+  position: absolute;
+  bottom: -200rem;
+  left: 254rem;
+  width: 295rem;
+  height: 133.2rem;
+}
+
+.image-6 {
+  position: absolute;
+  left: 680rem;
+  bottom: -280rem;
+  z-index: 2;
+  width: 596rem;
+  height: 230.47rem;
+}
+
+.image-7 {
+  position: absolute;
+  right: 180rem;
+  bottom: -300rem;
+  z-index: 2;
+  width: 317rem;
+  height: 242rem;
+}
+
+.image-8 {
+  position: absolute;
+  right: 50rem;
+  bottom: -310rem;
+  z-index: 1;
+  width: 293rem;
+  height: 184rem;
+}

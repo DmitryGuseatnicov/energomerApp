@@ -1,21 +1,68 @@
+.page {
+  position: relative;
+}
+
 .title {
   @include TitleH1;
 }
 
 .content {
-  margin-top: 60rem;
+  margin-top: 25rem;
   display: flex;
-  gap: 163rem;
+  gap: 120rem;
 }
 
 .block-title {
-  @include TitleH3;
+  @include Subtitle;
+  background: #FFFFFF80;
+  width: 450rem;
+  height: 96rem;
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 82.96%, rgba(255, 255, 255, 0.2) 100%);
+  box-shadow: 0px 4px 24px 8px #FFFFFF1A inset, 16px 24px 16px -16px #FFFFFF1A inset, 0px 10px 25px -15px #0052A04D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rem;
+  padding: 0 20rem;
+  text-align: center;
 }
 
 .list {
-  margin-top: 47rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 450rem;
+  gap: 10rem;
 }
 
 .card {
   margin-top: 10rem;
+}
+
+.lamp {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 719rem;
+  height: 604rem;
+  z-index: -1;
+}
+
+.sky-1 {
+  position: absolute;
+  top: -60rem;
+  right: -200rem;
+  width: 1088rem;
+  height: 591rem;
+  z-index: -1;
+}
+
+.sky-2 {
+  position: absolute;
+  top: -80rem;
+  left: 200rem;
+  width: 620rem;
+  height: 335rem;
+  z-index: -1;
 }

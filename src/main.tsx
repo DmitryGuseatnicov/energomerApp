@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 
 import './assets/style/index.scss';
 import { App } from './App/App';
 import { appRoutes } from './appRoutes';
+import { AboutPage } from './pages/AboutPage';
 import { AmiSystemPage } from './pages/AmiSystemPage';
 import { SmartElectricityMetersPage } from './pages/SmartElectricityMetersPage';
 
@@ -15,7 +16,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: appRoutes.about(),
-        element: <div>Hello world!</div>,
+        element: <AboutPage />,
       },
       {
         path: appRoutes.amiSystem(),
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
             element: <SmartElectricityMetersPage />,
           },
         ],
+      },
+      {
+        path: '*',
+        element: <Navigate to="/about" replace />,
       },
     ],
   },

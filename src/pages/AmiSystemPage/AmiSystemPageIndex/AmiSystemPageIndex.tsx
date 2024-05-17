@@ -64,8 +64,7 @@ export const AmiSystemPageIndex = () => {
           >
             <InfoCard key={card.link} {...card} />
           </div>
-
-))}
+        ))}
       </div>
     </div>
   );
